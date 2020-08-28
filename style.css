@@ -34,3 +34,28 @@
 .date-block__day {
   font-size: 24px;
 }
+
+.event-container__event-details {
+  background: var(--dark);
+  color: var(--white);
+  padding: 40px;
+  border-radius: 5px;
+  position: relative;
+  margin-left: 25px;
+}
+
+.event-container__event-details::before {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: calc(50% - 10px);
+  width: 22px;
+  height: 22px;
+  background: var(--dark);
+  border-radius: 5px;
+  transform: rotate(45deg);
+}
+
+.event-details__title {
+  margin: 0;
+}
